@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import styled from "styled-components";
 import { TaskListContext } from "../context/TaskListContext";
+import Button from "./Button";
 
 const Form = styled.form`
   margin: 3vh 3vw;
@@ -18,20 +19,6 @@ const Input = styled.input`
   background-color: #f1f4f5;
   &:required {
     box-shadow: none;
-  }
-`;
-
-const Button = styled.button`
-  margin-left: 2vw;
-  padding: 1vh 2vw;
-  font-size: 15px;
-  border-radius: 5px;
-  background-color: #f1f4f5;
-  cursor: pointer;
-  transition: 0.15s ease-in-out;
-  &:hover {
-    color: #f1f4f5;
-    background-color: #79989b;
   }
 `;
 

@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { TaskListContext } from "../context/TaskListContext";
+import Button from "./Button";
 
 const TaskContainer = styled.div`
-  margin: 2vh 0;
+  margin-bottom: 1px;
   padding: 1vh 3vw;
   color: #f1f4f5;
   background-color: #151b1b;
@@ -15,20 +16,6 @@ const TaskName = styled.p`
   flex: 1;
   padding: 1vh 0;
   font-size: 15px;
-`;
-
-const Button = styled.button`
-  margin-left: 2vw;
-  padding: 1vh 2vw;
-  font-size: 15px;
-  border-radius: 5px;
-  background-color: #f1f4f5;
-  cursor: pointer;
-  transition: 0.15s ease-in-out;
-  &:hover {
-    color: #f1f4f5;
-    background-color: #79989b;
-  }
 `;
 
 const Task = ({ task }) => {
