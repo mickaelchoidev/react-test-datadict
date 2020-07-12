@@ -20,6 +20,10 @@ const Input = styled.input`
   &:required {
     box-shadow: none;
   }
+  &:focus {
+    border: 4px solid #79989b;
+    box-shadow: 0px 0px 5px 0px rgba(241, 244, 245, 1);
+  }
 `;
 
 const InputForm = () => {
