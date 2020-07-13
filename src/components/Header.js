@@ -12,7 +12,7 @@ const HeaderTitle = styled.header`
 const Header = () => {
   return (
     <HeaderTitle>
-      To do App with react, context API and styled-components
+      Todo App with React, Context API and Styled-Components
     </HeaderTitle>
   );
 };
