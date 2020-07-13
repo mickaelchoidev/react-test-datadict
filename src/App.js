@@ -12,6 +12,7 @@ import Task from "./components/Task";
 
 const App = () => {
   const { tasks } = useContext(TaskListContext);
+  console.log(tasks);
   return (
     <GlobalWrapper>
       <Header />

@@ -8,7 +8,8 @@ const Button = styled.button`
   background-color: #f1f4f5;
   cursor: pointer;
   transition: 0.1s ease-in-out;
-  &:active {
+  &:hover,
+  &:focus {
     color: #f1f4f5;
     background-color: #79989b;
   }

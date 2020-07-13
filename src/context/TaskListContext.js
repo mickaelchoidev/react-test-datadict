@@ -22,11 +22,6 @@ const TaskListContextProvider = (props) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  // Clear tasks
-  const clearList = () => {
-    setTasks([]);
-  };
-
   // Find task
   const findItem = (id) => {
     const item = tasks.find((task) => task.id === id);
@@ -40,8 +35,6 @@ const TaskListContextProvider = (props) => {
       task.id === id ? { title, id } : task
     );
 
-    console.log(newTasks);
-
     setTasks(newTasks);
     setEditItem(null);
   };
@@ -52,7 +45,6 @@ const TaskListContextProvider = (props) => {
         tasks,
         addTask,
         removeTask,
-        clearList,
         findItem,
         editTask,
         editItem,
