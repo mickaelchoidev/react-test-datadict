@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import styled from "styled-components";
-import { TaskListContext } from "../context/TaskListContext";
-import Button from "./Button";
+import { TaskListContext } from "../../context/TaskListContext";
+import Button from "../Button/Button";
 
 const Form = styled.form`
   margin: 3vh 3vw;

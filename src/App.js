@@ -1,18 +1,19 @@
 import React, { useContext } from "react";
+
 import { TaskListContext } from "./context/TaskListContext";
 
-import GlobalWrapper from "./components/GlobalWrapper";
-import Header from "./components/Header";
-import MainContainer from "./components/MainContainer";
-import TodoContainer from "./components/TodoContainer";
-import InputSection from "./components/InputSection";
-import Line from "./components/Line";
-import ListTasks from "./components/ListTasks";
-import Task from "./components/Task";
+import GlobalWrapper from "./components/GlobalWrapper/GlobalWrapper";
+import Header from "./components/Header/Header";
+import MainContainer from "./components/MainContainer/MainContainer";
+import TodoContainer from "./components/TodoContainer/TodoContainer";
+import InputSection from "./components/InputSection/InputSection";
+import Line from "./components/Line/Line";
+import ListTasks from "./components/ListTasks/ListTasks";
+import Task from "./components/Task/Task";
 
 const App = () => {
   const { tasks } = useContext(TaskListContext);
-  console.log(tasks);
+
   return (
     <GlobalWrapper>
       <Header />
