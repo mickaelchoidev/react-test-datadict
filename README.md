@@ -1,4 +1,4 @@
-# This project is a to do App responsive with React.
+# This project is a responsive todo App  with React.
 
 ## git clone project
 ## npm install (dependencies)
